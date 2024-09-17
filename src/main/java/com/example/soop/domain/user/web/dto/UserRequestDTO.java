@@ -15,7 +15,6 @@ public class UserRequestDTO {
         @Schema(description = "사용자 이름")
         @Pattern(regexp = "^[가-힣a-zA-Z]+$", message = "숫자나 특수문자는 사용할 수 없습니다.")
         @Size(min = 1, max = 10, message = "이름은 10자 이내로 입력해주세요.")
-
         private String name;
 
         @Schema(description = "사용자 id")
